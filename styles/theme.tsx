@@ -46,7 +46,15 @@ const light_Button: BaseTheme = {
 }
 const light_Text: BaseTheme = {
     ...light,
-    background: tokens.color.gray10Dark,
+    background: tokens.color.gray10Light,
+    backgroundPress: tokens.color.yellow10Light, // darker background on press
+    backgroundHover: tokens.color.yellow11Light, // lighter background on hover
+    color: tokens.color.gray1Light,
+}
+
+const dark_Text: BaseTheme = {
+    ...dark,
+    background: tokens.color.gray10Light,
     backgroundPress: tokens.color.yellow10Light, // darker background on press
     backgroundHover: tokens.color.yellow11Light, // lighter background on hover
     color: tokens.color.gray1Light,
@@ -66,6 +74,11 @@ const light_accent_Text: BaseTheme = {
     color: tokens.color.blue8Light,
 }
 
+// color that pops out
+const dark_accent_Text: BaseTheme = {
+    ...dark,
+    color: tokens.color.blue8Light,
+}
 // we recommend doing this because it avoids a category of confusing type errors
 // 1. to get ThemeNames/Theme, first create an object with all themes
 
@@ -76,6 +89,8 @@ const allThemes = {
     light_Text,
     light_accent_Button,
     light_accent_Text,
+    dark_Text,
+    dark_accent_Text
 }
 // 2. then get the name type
 

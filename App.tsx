@@ -9,7 +9,7 @@ function App(): JSX.Element {
 
         <Button>Default</Button>
         <Button theme='accent'>theme='accent'</Button>
-        <Button theme='accent_Button'>theme='accent'</Button>
+        <Button theme='accent_Button'>theme='accent_Button'</Button>
 
         <Stack p='$4' />
 
